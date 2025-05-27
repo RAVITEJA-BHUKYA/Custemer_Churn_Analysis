@@ -83,20 +83,23 @@ streamlit run app.py
 # Step 4: Access the app at
 http://localhost:8501
 ## 📂 Project Structure
-kotlin
-Copy
-Edit
-Custemer_Churn_Analysis/
+telecom-churn-analysis/
+│
 ├── data/
-│   ├── Telco-Customer-Churn.csv
-│   └── tel_churn_clean.csv
-├── churn_analysis_model_training.ipynb
-├── app.py
-├── XGBoost_model.joblib
-├── Customer Churn Dashboard.pbix
-├── requirements.txt
-├── README.md
-└── .gitignore
+│   ├── Telco-Customer-Churn.csv         ← Raw dataset
+│   └── tel_churn_clean.csv             ← Cleaned and preprocessed dataset
+
+├──  churn_analysis_model_training.ipynb  ← Jupyter notebook with analysis and model training
+│
+├─ app.py                         ← Core Streamlit application
+│
+├── xgboost_model.joblib  ← Trained model
+├── Customer Churn Dashboard.pbix  ← PowerBI file
+│
+├── retrain.py                         ← Model retraining script
+├── requirements.txt                   ← Python dependencies
+├── README.md                          ← Project overview and setup instructions
+└── .gitignore                         ← Git ignore file
 ## 📦 Requirements
 streamlit
 pandas
